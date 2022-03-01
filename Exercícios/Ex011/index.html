@@ -14,5 +14,15 @@
         <source media="(max-width: 1000px)" srcset="images/foto-m.png" type="image/png">
         <img src="images/foto-b.png" alt="Imagem grande">
     </picture>
+    <h1>Áudios em HTML</h1>
+    <p>Reproduzindo áudios na web</p>
+    <audio src="media/quiet_uptown.mp3" controls autoplay></audio>
+    <!-- Formatos compatíveis: MP3 WAV OGG-->
+    <audio preload="metadata" controls loop>
+        <source src="media/quiet_uptown.mp3" type="audio/mpeg">
+        <source src="media/quiet_uptown.wav" type="audio/wav">
+        <source src="media/quiet_uptown.ogg" type="audio/ogg">
+        <p>Navegador incompatível com formatos de áudio, clique <a href="media/quiet_uptown.mp3">aqui</a> para baixar o áudio.</p>
+    </audio>
 </body>
 </html>
